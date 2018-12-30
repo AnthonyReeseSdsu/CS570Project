@@ -1,0 +1,11 @@
+I wrote this code myself, a short coming that I have encountered is getpwnam() is not working on strings when '/' is included, I think that I need to seperate the variabes and then use getpwnam() on the
+first variable and copy the rest of the string onto the result. However we are close to the deadline and I don't want to break the rest of my here is funcionality while doing this. I went into detail for
+each statement and large function in getword.c as well as p2.c in order to explained how I decided to handle our specifications. The main wile loop used in my code is from Foster's recommended inout2.c file, I modified it to stop when our maximum character length has been detected. Various system calls which were used, are from the course reader as well as specifications to p2 and p4. I found getpwnam() after
+some google research. I used examples from the manpages of various system calls in order to help me write a lot of my code.  I think that the main improvement I could make in my code is calling the 
+single and multiple pipefunctions after my inital fork(in my child) and have my parent wait like normal. I was thinking this because in both functions and main, my parent does the same thing. I could alse 
+make a function for I/O redirection and hereIs functionality. Lastly I think a function for clearing flags would help clean up the code.
+
+Individual choices : When my code encounters something like 'echo hi > |', an error is issued to the user stating that there is not a file chosen for output redirection. The same logic will be used when 
+		     encountering '<' and '>>' metacharacters. This is done by not calling getword() when we catch the metacharacter, but instead increasing our flag and continuing. Then after we 
+		     have checked for all metacharacters, we check to see if our flag has been set and our output(in this case) redirection file's name has not yet been set. Then in main, we check to 
+		     see if our flags corresponding to '>','<', and '<<' are greater than one, or if '<<' and '<' appear on the same line. If so an appropriate, corresponding message is issued to the user. 
