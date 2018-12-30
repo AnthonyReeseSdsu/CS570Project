@@ -7,12 +7,10 @@ Class: CS570 - Operating Systems
 Due Date: 9/5/18
 
 Synopsis - Takes input from stdin, splits words on certain delimeters
- and places them into an array to be printed to stdout. The program
+ and places them into an array to be used by parse(). The program
  will overwrite each word with the next word and return the letter count
- to the main function. The main function will then use the array which
- was filled with the getword function, as well as the returned int value,
- to print to stdout
-
+ to the parse function. The parse function will then use each word to set
+ flags or put the word in a seperate array, in order to get ready for execvp.
 */
 #include <stdlib.h>
 #include "getword.h"
