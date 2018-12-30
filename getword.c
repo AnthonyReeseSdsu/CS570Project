@@ -1,11 +1,4 @@
 /*
-Program: getword.c
-Author: Anthony Reese
-RED ID: 817839276
-Professor: John Carroll
-Class: CS570 - Operating Systems
-Due Date: 9/5/18
-
 Synopsis - Takes input from stdin, splits words on certain delimeters
  and places them into an array to be used by parse(). The program
  will overwrite each word with the next word and return the letter count
