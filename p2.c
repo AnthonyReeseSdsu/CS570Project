@@ -1,12 +1,3 @@
-/*
-	Author: Anthony Reese
-	Program: p2.c
-	REDID : 817839276	
-	Professor: Dr. John Carroll
-	Class: CS570 - Operating Systems
-	Due date: 10/10/18 
-
-*/
 
 #include "p2.h"
 char s[STORAGE];
