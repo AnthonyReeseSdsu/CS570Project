@@ -2,8 +2,12 @@
 This is a basic POSIX based shell which was written as a semester long project for my Operating Systems course. In order to test this code, please change the default linux shell to tcsh using the following commands:
 
 chsh
+
 /bin/tcsh
+
 yourpassword
+
+
 
 You can check that this worked by typing typing the following command:
 
