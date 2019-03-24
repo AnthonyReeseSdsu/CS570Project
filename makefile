@@ -10,7 +10,7 @@ getword.o:     getword.h
 ${PROGRAM}.o:  ${PROGRAM}.h getword.h
 
 clean:
-               rm -f *.o ${PROGRAM} your.output*
+               rm -f *.o ${PROGRAM}
                
 splint:
                splint -warnposix +trytorecover -weak getword.c ${PROGRAM}.c
